@@ -291,10 +291,15 @@ footer .logo{
     .banner-content{
         margin-left: 1.5rem;
     }
+    .cards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .card {
         padding: 2rem 2rem;
         background-color: #1e1e1e;
-        width: 22rem;
+        width: 45%;
+        margin-bottom: 1rem;
     }
     .work-together{
         margin: 0;
@@ -333,6 +338,9 @@ footer .logo{
     }
     .cards{
         flex-wrap: wrap;
+    }
+    .card{
+        width: 90%;
     }
     .number-content{
         padding: 1rem 1rem;
