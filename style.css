@@ -15,6 +15,9 @@ body{
 nav{
     padding: 3rem 12rem 1rem 6rem;
 }
+.hamburger{
+    display: none;
+}
 li,button{
     cursor: pointer;
 }
@@ -258,4 +261,149 @@ footer .logo{
    margin-right: 1rem;
    width: 16px;
    height: 16px;
+}
+
+@media screen and (max-width:768px){
+    nav, .cards-section, .projects, .work-together, footer {
+        padding: 1.5rem 2.5rem;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .banner-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        justify-content: center;
+    }
+    .list-item {
+        margin-left:1.5rem;
+    }
+    .banner-section>img {
+        width: 27rem;
+        width: 20rem;
+        object-position: bottom;
+        order: 2;
+    }
+    .banner-content{
+        margin-left: 1.5rem;
+    }
+    .card {
+        padding: 2rem 2rem;
+        background-color: #1e1e1e;
+        width: 22rem;
+    }
+    .work-together{
+        margin: 0;
+    }
+    .work-together-text {
+        font-size: 2rem;
+
+    }
+    .work-together-desc {
+        font-size: 0.9rem;
+    }
+    .contact {
+        padding: 0.7rem 2rem;
+        margin-right: 0;
+    }
+    footer{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:450px){
+    nav, .banner-section, .cards-section, .projects, .work-together {
+        padding: 1.5rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul.list{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner-section{
+        flex-wrap: wrap;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .number-content{
+        padding: 1rem 1rem;
+    }
+    .banner-section>img {
+        width: 95%;
+        order: 2;
+    }
+    .numbers {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .years-box {
+        grid-column: 1/3;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .work-together {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .work-together>div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .work-together-text {
+        font-size: 1.8rem;
+    }
+    .projects .heading-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    .heading-section .heading {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .banner-content .about-me {
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .small-text{
+        margin-bottom: 1rem;
+    }
+    .project-card{
+        width: 100%;
+    }
+    footer .logo {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:350px){
+    .banner-content .title {
+        font-size: 3rem;
+        letter-spacing: .2rem;
+    }
+    .banner-content{
+        margin-left: 1rem;
+    }
+    .card {
+        padding: 1.5rem;
+        background-color: #1e1e1e;
+        width: 22rem;
+    }
+    .lower-nav li {
+        margin: 0.4rem;
+        font-size: 0.9rem;
+    }
 }
